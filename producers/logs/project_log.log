@@ -2258,3 +2258,96 @@
 2025-01-22 17:11:29.433 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Charlie', 'timestamp': 1737583889.432481}
 2025-01-22 17:11:30.436 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Bob', 'timestamp': 1737583890.436088}
 2025-01-22 17:11:31.443 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583891.44257}
+2025-01-22 17:11:32.450 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Diana', 'timestamp': 1737583892.4494212}
+2025-01-22 17:11:33.456 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Alice', 'timestamp': 1737583893.454435}
+2025-01-22 17:11:34.603 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Diana', 'timestamp': 1737583894.602009}
+2025-01-22 17:11:35.626 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Alice', 'timestamp': 1737583895.6258922}
+2025-01-22 17:11:36.628 | INFO     | __main__:generate_messages:96 - Opening data file in read mode: /Users/davidrodriguez/Documents/44671_3/buzzline-03-davidrm/data/buzz.json
+2025-01-22 17:11:36.629 | INFO     | __main__:generate_messages:98 - Reading data from file: /Users/davidrodriguez/Documents/44671_3/buzzline-03-davidrm/data/buzz.json
+2025-01-22 17:11:36.630 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Eve', 'timestamp': 1737583896.6299}
+2025-01-22 17:11:37.631 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Alice', 'timestamp': 1737583897.6312919}
+2025-01-22 17:11:38.635 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Charlie', 'timestamp': 1737583898.634559}
+2025-01-22 17:11:39.637 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Alice', 'timestamp': 1737583899.63605}
+2025-01-22 17:11:40.643 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Diana', 'timestamp': 1737583900.6427898}
+2025-01-22 17:11:41.647 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Alice', 'timestamp': 1737583901.64606}
+2025-01-22 17:11:42.652 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Diana', 'timestamp': 1737583902.651851}
+2025-01-22 17:11:43.676 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583903.667003}
+2025-01-22 17:11:44.680 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Eve', 'timestamp': 1737583904.6793878}
+2025-01-22 17:11:45.682 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Alice', 'timestamp': 1737583905.682219}
+2025-01-22 17:11:46.689 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Diana', 'timestamp': 1737583906.688589}
+2025-01-22 17:11:47.693 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Diana', 'timestamp': 1737583907.693115}
+2025-01-22 17:11:48.698 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Charlie', 'timestamp': 1737583908.697663}
+2025-01-22 17:11:49.701 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583909.70115}
+2025-01-22 17:11:50.733 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583910.732661}
+2025-01-22 17:11:51.740 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583911.739986}
+2025-01-22 17:11:52.748 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Eve', 'timestamp': 1737583912.747343}
+2025-01-22 17:11:53.756 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Alice', 'timestamp': 1737583913.755861}
+2025-01-22 17:11:54.762 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Alice', 'timestamp': 1737583914.761436}
+2025-01-22 17:11:55.765 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Diana', 'timestamp': 1737583915.764746}
+2025-01-22 17:11:56.767 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Eve', 'timestamp': 1737583916.766774}
+2025-01-22 17:11:57.769 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Charlie', 'timestamp': 1737583917.7686532}
+2025-01-22 17:11:58.772 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Bob', 'timestamp': 1737583918.772541}
+2025-01-22 17:11:59.779 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Alice', 'timestamp': 1737583919.778253}
+2025-01-22 17:12:00.782 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583920.7816699}
+2025-01-22 17:12:01.783 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583921.7827468}
+2025-01-22 17:12:02.790 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Bob', 'timestamp': 1737583922.789567}
+2025-01-22 17:12:03.794 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Diana', 'timestamp': 1737583923.793581}
+2025-01-22 17:12:04.801 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Diana', 'timestamp': 1737583924.80043}
+2025-01-22 17:12:05.805 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Alice', 'timestamp': 1737583925.805025}
+2025-01-22 17:12:06.810 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Charlie', 'timestamp': 1737583926.810285}
+2025-01-22 17:12:07.812 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Diana', 'timestamp': 1737583927.8122199}
+2025-01-22 17:12:08.815 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583928.814584}
+2025-01-22 17:12:09.820 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583929.818756}
+2025-01-22 17:12:10.825 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Alice', 'timestamp': 1737583930.823746}
+2025-01-22 17:12:11.829 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Alice', 'timestamp': 1737583931.828376}
+2025-01-22 17:12:12.835 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Charlie', 'timestamp': 1737583932.834955}
+2025-01-22 17:12:13.841 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Bob', 'timestamp': 1737583933.840916}
+2025-01-22 17:12:14.847 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583934.845376}
+2025-01-22 17:12:15.852 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583935.852017}
+2025-01-22 17:12:16.856 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Alice', 'timestamp': 1737583936.855773}
+2025-01-22 17:12:17.861 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Charlie', 'timestamp': 1737583937.860577}
+2025-01-22 17:12:18.875 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583938.874948}
+2025-01-22 17:12:19.885 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583939.8826182}
+2025-01-22 17:12:20.890 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583940.890023}
+2025-01-22 17:12:21.896 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583941.895581}
+2025-01-22 17:12:22.903 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Bob', 'timestamp': 1737583942.9020889}
+2025-01-22 17:12:23.911 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583943.910756}
+2025-01-22 17:12:24.917 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Bob', 'timestamp': 1737583944.916497}
+2025-01-22 17:12:25.919 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583945.918735}
+2025-01-22 17:12:26.926 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Bob', 'timestamp': 1737583946.925697}
+2025-01-22 17:12:27.933 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Alice', 'timestamp': 1737583947.933014}
+2025-01-22 17:12:28.936 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Eve', 'timestamp': 1737583948.9342961}
+2025-01-22 17:12:29.941 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583949.941231}
+2025-01-22 17:12:30.944 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583950.9442291}
+2025-01-22 17:12:31.951 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Charlie', 'timestamp': 1737583951.950381}
+2025-01-22 17:12:32.954 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583952.952498}
+2025-01-22 17:12:33.956 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Bob', 'timestamp': 1737583953.955619}
+2025-01-22 17:12:34.961 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583954.960983}
+2025-01-22 17:12:35.968 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583955.96754}
+2025-01-22 17:12:36.972 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583956.972398}
+2025-01-22 17:12:37.978 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583957.977856}
+2025-01-22 17:12:38.980 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Diana', 'timestamp': 1737583958.979831}
+2025-01-22 17:12:39.986 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Bob', 'timestamp': 1737583959.9860191}
+2025-01-22 17:12:40.990 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583960.989695}
+2025-01-22 17:12:41.995 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583961.9946592}
+2025-01-22 17:12:43.005 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Eve', 'timestamp': 1737583963.0045109}
+2025-01-22 17:12:44.012 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583964.011414}
+2025-01-22 17:12:45.013 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Charlie', 'timestamp': 1737583965.0132868}
+2025-01-22 17:12:46.019 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Charlie', 'timestamp': 1737583966.018796}
+2025-01-22 17:12:47.023 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583967.022325}
+2025-01-22 17:12:48.028 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Diana', 'timestamp': 1737583968.0280268}
+2025-01-22 17:12:49.031 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Kafka is awesome.', 'author': 'Bob', 'timestamp': 1737583969.030723}
+2025-01-22 17:12:50.037 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Eve', 'timestamp': 1737583970.036468}
+2025-01-22 17:12:51.040 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Charlie', 'timestamp': 1737583971.0389812}
+2025-01-22 17:12:52.046 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Charlie', 'timestamp': 1737583972.045163}
+2025-01-22 17:12:53.071 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Charlie', 'timestamp': 1737583973.071262}
+2025-01-22 17:12:54.076 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Diana', 'timestamp': 1737583974.076195}
+2025-01-22 17:12:55.080 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583975.0803788}
+2025-01-22 17:12:56.083 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Eve', 'timestamp': 1737583976.0828521}
+2025-01-22 17:12:57.085 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Eve', 'timestamp': 1737583977.085222}
+2025-01-22 17:12:58.091 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: JSON makes life easier.', 'author': 'Eve', 'timestamp': 1737583978.090936}
+2025-01-22 17:12:59.095 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: Have a great day!', 'author': 'Alice', 'timestamp': 1737583979.095263}
+2025-01-22 17:13:00.098 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583980.09812}
+2025-01-22 17:13:01.102 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583981.1020648}
+2025-01-22 17:13:02.106 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583982.105549}
+2025-01-22 17:13:03.112 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Custom Message: This is a buzz message.', 'author': 'Alice', 'timestamp': 1737583983.111722}
