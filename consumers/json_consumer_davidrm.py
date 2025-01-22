@@ -24,7 +24,7 @@ from collections import defaultdict  # data structure for counting author occurr
 
 # Import external packages
 from dotenv import load_dotenv
-import pandas as pd #for real-time analytics
+import pandas as pd  # for real-time analytics
 
 # Import functions from local modules
 from utils.utils_consumer import create_kafka_consumer
@@ -56,27 +56,15 @@ def get_kafka_consumer_group_id() -> int:
 
 
 #####################################
-# Set up Data Store to hold author counts
-#####################################
-
-# Initialize a dictionary to store author counts
-# The defaultdict type initializes counts to 0
-# pass in the int function as the default_factory
-# to ensure counts are integers
-# {author: count} author is the key and count is the value
-author_counts = defaultdict(int)
-
-#####################################
 # Set up Data Store to hold author counts and Real-Time Analytics with Pandas
 #####################################
 
-# Initialize a DataFrame to store author counts
+# Initialize a DataFrame to store author counts globally
 author_counts_df = pd.DataFrame(columns=["author", "count"])
 
 #####################################
 # Function to process a single message
-# #####################################
-
+#####################################
 
 def process_message(message: str) -> None:
     """
@@ -85,6 +73,8 @@ def process_message(message: str) -> None:
     Args:
         message (str): The JSON message as a string.
     """
+    global author_counts_df  # Declare the global variable to update it
+
     try:
         # Log the raw message for debugging
         logger.debug(f"Raw message: {message}")
@@ -105,7 +95,9 @@ def process_message(message: str) -> None:
             if author in author_counts_df["author"].values:
                 author_counts_df.loc[author_counts_df["author"] == author, "count"] += 1
             else:
-                author_counts_df = author_counts_df.append({"author": author, "count": 1}, ignore_index=True)
+                # Use pd.concat to add a new row for the author
+                new_row = pd.DataFrame({"author": [author], "count": [1]})
+                author_counts_df = pd.concat([author_counts_df, new_row], ignore_index=True)
 
             # Log the updated DataFrame
             logger.info(f"Updated author counts: {author_counts_df}")
@@ -126,7 +118,6 @@ def process_message(message: str) -> None:
 #####################################
 # Define main function for this module
 #####################################
-
 
 def main() -> None:
     """
