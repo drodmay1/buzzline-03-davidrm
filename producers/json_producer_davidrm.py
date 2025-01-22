@@ -1,13 +1,13 @@
 """
-json_producer_davidrm.py
+json_producer_case.py
 
 Stream JSON data to a Kafka topic.
 
 Example JSON message
-{"message": "I enjoy working with Python!", "author": "DavidRm"}
+{"message": "I love Python!", "author": "Eve"}
 
 Example serialized to Kafka message
-"{\"message\": \"I This is a custom Kafka message!\", \"author\": \"DavidRm\"}"
+"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
 
 """
 
@@ -21,7 +21,7 @@ import sys
 import time
 import pathlib  # work with file paths
 import json  # work with JSON data
-from datetime import datetime
+import pandas as pd
 
 # Import external packages
 from dotenv import load_dotenv
@@ -58,26 +58,6 @@ def get_message_interval() -> int:
     logger.info(f"Message interval: {interval} seconds")
     return interval
 
-#####################################
-# Function to Generate Custom Messages
-#####################################
-
-def generate_messages():
-    """Dynamically generate custom messages."""
-    id_counter = 1
-    while True:
-        message = {
-            "id": id_counter,
-            "author": "David",
-            "message": f"This is custom message {id_counter}",
-            "timestamp": datetime.utcnow().isoformat(),
-            "priority": "high" if id_counter % 2 == 0 else "normal"
-        }
-        logger.info(f"Generated custom message: {message}")
-        yield message
-        id_counter += 1
-        time.sleep(1)  # Adjust the interval as needed
-
 
 #####################################
 # Set up Paths
@@ -97,6 +77,52 @@ DATA_FILE: pathlib.Path = DATA_FOLDER.joinpath("buzz.json")
 logger.info(f"Data file: {DATA_FILE}")
 
 #####################################
+# Message Generator
+#####################################
+
+
+def generate_messages(file_path: pathlib.Path):
+    """
+    Read from a JSON file and yield them one by one, continuously.
+
+    Args:
+        file_path (pathlib.Path): Path to the JSON file.
+
+    Yields:
+        dict: A dictionary containing the JSON data.
+    """
+    while True:
+        try:
+            logger.info(f"Opening data file in read mode: {DATA_FILE}")
+            with open(DATA_FILE, "r") as json_file:
+                logger.info(f"Reading data from file: {DATA_FILE}")
+                json_data: list = json.load(json_file)
+
+                if not isinstance(json_data, list):
+                    raise ValueError(
+                        f"Expected a list of JSON objects, got {type(json_data)}."
+                    )
+
+                # Iterate over the entries in the JSON file
+                for buzz_entry in json_data:
+                    # Add a custom timestamp to the message
+                    buzz_entry['timestamp'] = time.time()
+                    buzz_entry['message'] = "Custom Message: " + buzz_entry.get('message', 'No message')
+
+                    logger.debug(f"Generated JSON: {buzz_entry}")
+                    yield buzz_entry
+        except FileNotFoundError:
+            logger.error(f"File not found: {file_path}. Exiting.")
+            sys.exit(1)
+        except json.JSONDecodeError as e:
+            logger.error(f"Invalid JSON format in file: {file_path}. Error: {e}")
+            sys.exit(2)
+        except Exception as e:
+            logger.error(f"Unexpected error in message generation: {e}")
+            sys.exit(3)
+
+
+#####################################
 # Main Function
 #####################################
 
@@ -108,21 +134,18 @@ def main():
     - Ensures the Kafka topic exists.
     - Creates a Kafka producer using the `create_kafka_producer` utility.
     - Streams generated JSON messages to the Kafka topic.
-    - Sends JSON messages to the Kafka topic.
     """
 
     logger.info("START producer.")
+    verify_services()
 
-    # fetch .env content
     topic = get_kafka_topic()
-    interval = get_message_interval()
+    interval_secs = get_message_interval()
 
-    # Verify the data file exists
     if not DATA_FILE.exists():
         logger.error(f"Data file not found: {DATA_FILE}. Exiting.")
         sys.exit(1)
 
-    # Create the Kafka producer
     producer = create_kafka_producer(
         value_serializer=lambda x: json.dumps(x).encode("utf-8")
     )
@@ -141,23 +164,18 @@ def main():
     # Generate and send messages
     logger.info(f"Starting message production to topic '{topic}'...")
     try:
-        # Generate and send messages
-        for message_dict in generate_messages():
-            # Serialize the message as JSON
-            message_json = json.dumps(message_dict)
-
-            # Send the message to the Kafka topic
-            producer.send(topic, value=message_json)
+        for message_dict in generate_messages(DATA_FILE):
+            # Send message directly as a dictionary (producer handles serialization)
+            producer.send(topic, value=message_dict)
             logger.info(f"Sent message to topic '{topic}': {message_dict}")
-
-            # Wait for the defined interval
-            time.sleep(interval)
-
+            time.sleep(interval_secs)
+    except KeyboardInterrupt:
+        logger.warning("Producer interrupted by user.")
     except Exception as e:
-        logger.error(f"Error producing messages: {e}")
+        logger.error(f"Error during message production: {e}")
     finally:
         producer.close()
-        logger.info("Producer stopped.")
+        logger.info("Kafka producer closed.")
 
     logger.info("END producer.")
 
