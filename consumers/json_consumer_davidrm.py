@@ -1,5 +1,5 @@
 """
-json_consumer_case.py
+json_consumer_davidrm.py
 
 Consume json messages from a Kafka topic and process them.
 
@@ -24,6 +24,7 @@ from collections import defaultdict  # data structure for counting author occurr
 
 # Import external packages
 from dotenv import load_dotenv
+import pandas as pd #for real-time analytics
 
 # Import functions from local modules
 from utils.utils_consumer import create_kafka_consumer
@@ -65,6 +66,12 @@ def get_kafka_consumer_group_id() -> int:
 # {author: count} author is the key and count is the value
 author_counts = defaultdict(int)
 
+#####################################
+# Set up Data Store to hold author counts and Real-Time Analytics with Pandas
+#####################################
+
+# Initialize a DataFrame to store author counts
+author_counts_df = pd.DataFrame(columns=["author", "count"])
 
 #####################################
 # Function to process a single message
@@ -94,11 +101,19 @@ def process_message(message: str) -> None:
             author = message_dict.get("author", "unknown")
             logger.info(f"Message received from author: {author}")
 
-            # Increment the count for the author
-            author_counts[author] += 1
+            # Real-Time Analytics: Update the count in the DataFrame
+            if author in author_counts_df["author"].values:
+                author_counts_df.loc[author_counts_df["author"] == author, "count"] += 1
+            else:
+                author_counts_df = author_counts_df.append({"author": author, "count": 1}, ignore_index=True)
 
-            # Log the updated counts
-            logger.info(f"Updated author counts: {dict(author_counts)}")
+            # Log the updated DataFrame
+            logger.info(f"Updated author counts: {author_counts_df}")
+
+            # Simple alerting: If a specific author sends more than 5 messages, log an alert
+            if author_counts_df.loc[author_counts_df["author"] == author, "count"].values[0] > 5:
+                logger.warning(f"ALERT: Author '{author}' has sent more than 5 messages!")
+
         else:
             logger.error(f"Expected a dictionary but got: {type(message_dict)}")
 
