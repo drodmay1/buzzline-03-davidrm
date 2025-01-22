@@ -18954,3 +18954,1299 @@
 3  Charlie    62
 4      Bob    71
 2025-01-22 17:06:57.682 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:06:58.677 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583618.6664221}
+2025-01-22 17:06:58.677 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:06:58.699 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   113
+1      Eve    73
+2    Alice   100
+3  Charlie    62
+4      Bob    71
+2025-01-22 17:06:58.700 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:06:59.674 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583619.67084}
+2025-01-22 17:06:59.675 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:06:59.679 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   114
+1      Eve    73
+2    Alice   100
+3  Charlie    62
+4      Bob    71
+2025-01-22 17:06:59.680 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:00.681 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Bob', 'timestamp': 1737583620.676285}
+2025-01-22 17:07:00.681 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:00.698 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   114
+1      Eve    73
+2    Alice   100
+3  Charlie    62
+4      Bob    72
+2025-01-22 17:07:00.699 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:01.690 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Diana', 'timestamp': 1737583621.68441}
+2025-01-22 17:07:01.691 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:01.695 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   115
+1      Eve    73
+2    Alice   100
+3  Charlie    62
+4      Bob    72
+2025-01-22 17:07:01.697 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:02.693 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Diana', 'timestamp': 1737583622.689643}
+2025-01-22 17:07:02.693 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:02.698 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   116
+1      Eve    73
+2    Alice   100
+3  Charlie    62
+4      Bob    72
+2025-01-22 17:07:02.699 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:03.694 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Alice', 'timestamp': 1737583623.692044}
+2025-01-22 17:07:03.694 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:03.699 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   116
+1      Eve    73
+2    Alice   101
+3  Charlie    62
+4      Bob    72
+2025-01-22 17:07:03.700 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:04.702 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Charlie', 'timestamp': 1737583624.697783}
+2025-01-22 17:07:04.702 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:04.709 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   116
+1      Eve    73
+2    Alice   101
+3  Charlie    63
+4      Bob    72
+2025-01-22 17:07:04.710 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:05.707 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Diana', 'timestamp': 1737583625.7031271}
+2025-01-22 17:07:05.707 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:05.713 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   117
+1      Eve    73
+2    Alice   101
+3  Charlie    63
+4      Bob    72
+2025-01-22 17:07:05.714 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:06.711 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583626.705913}
+2025-01-22 17:07:06.711 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:06.722 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   117
+1      Eve    73
+2    Alice   101
+3  Charlie    63
+4      Bob    73
+2025-01-22 17:07:06.723 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:07.716 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583627.712437}
+2025-01-22 17:07:07.716 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:07.723 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   118
+1      Eve    73
+2    Alice   101
+3  Charlie    63
+4      Bob    73
+2025-01-22 17:07:07.723 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:08.735 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Alice', 'timestamp': 1737583628.718507}
+2025-01-22 17:07:08.735 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:08.781 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   118
+1      Eve    73
+2    Alice   102
+3  Charlie    63
+4      Bob    73
+2025-01-22 17:07:08.785 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:09.730 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Alice', 'timestamp': 1737583629.724709}
+2025-01-22 17:07:09.730 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:09.737 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   118
+1      Eve    73
+2    Alice   103
+3  Charlie    63
+4      Bob    73
+2025-01-22 17:07:09.738 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:10.739 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Charlie', 'timestamp': 1737583630.7343612}
+2025-01-22 17:07:10.739 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:10.746 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   118
+1      Eve    73
+2    Alice   103
+3  Charlie    64
+4      Bob    73
+2025-01-22 17:07:10.747 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:11.746 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Bob', 'timestamp': 1737583631.7431831}
+2025-01-22 17:07:11.747 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:11.753 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   118
+1      Eve    73
+2    Alice   103
+3  Charlie    64
+4      Bob    74
+2025-01-22 17:07:11.754 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:12.754 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583632.749411}
+2025-01-22 17:07:12.755 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:12.761 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   119
+1      Eve    73
+2    Alice   103
+3  Charlie    64
+4      Bob    74
+2025-01-22 17:07:12.762 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:13.758 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583633.755622}
+2025-01-22 17:07:13.758 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:13.766 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   120
+1      Eve    73
+2    Alice   103
+3  Charlie    64
+4      Bob    74
+2025-01-22 17:07:13.767 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:14.764 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Alice', 'timestamp': 1737583634.760175}
+2025-01-22 17:07:14.764 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:14.770 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   120
+1      Eve    73
+2    Alice   104
+3  Charlie    64
+4      Bob    74
+2025-01-22 17:07:14.771 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:15.771 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Charlie', 'timestamp': 1737583635.7673721}
+2025-01-22 17:07:15.771 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:15.780 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   120
+1      Eve    73
+2    Alice   104
+3  Charlie    65
+4      Bob    74
+2025-01-22 17:07:15.781 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:16.774 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583636.771613}
+2025-01-22 17:07:16.774 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:16.782 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   120
+1      Eve    73
+2    Alice   105
+3  Charlie    65
+4      Bob    74
+2025-01-22 17:07:16.783 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:17.780 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583637.776983}
+2025-01-22 17:07:17.780 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:17.787 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   121
+1      Eve    73
+2    Alice   105
+3  Charlie    65
+4      Bob    74
+2025-01-22 17:07:17.788 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:18.788 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583638.7849758}
+2025-01-22 17:07:18.788 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:18.795 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   121
+1      Eve    73
+2    Alice   106
+3  Charlie    65
+4      Bob    74
+2025-01-22 17:07:18.796 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:19.790 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583639.787072}
+2025-01-22 17:07:19.790 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:19.796 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   121
+1      Eve    73
+2    Alice   106
+3  Charlie    65
+4      Bob    75
+2025-01-22 17:07:19.797 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:20.798 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Bob', 'timestamp': 1737583640.7932649}
+2025-01-22 17:07:20.798 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:20.809 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   121
+1      Eve    73
+2    Alice   106
+3  Charlie    65
+4      Bob    76
+2025-01-22 17:07:20.810 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:21.804 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583641.800394}
+2025-01-22 17:07:21.804 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:21.810 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    73
+2    Alice   106
+3  Charlie    65
+4      Bob    76
+2025-01-22 17:07:21.811 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:22.805 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Bob', 'timestamp': 1737583642.802241}
+2025-01-22 17:07:22.805 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:22.811 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    73
+2    Alice   106
+3  Charlie    65
+4      Bob    77
+2025-01-22 17:07:22.812 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:23.811 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583643.8084831}
+2025-01-22 17:07:23.812 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:23.818 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    74
+2    Alice   106
+3  Charlie    65
+4      Bob    77
+2025-01-22 17:07:23.818 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:07:24.813 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Bob', 'timestamp': 1737583644.810221}
+2025-01-22 17:07:24.814 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:24.822 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    74
+2    Alice   106
+3  Charlie    65
+4      Bob    78
+2025-01-22 17:07:24.823 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:25.816 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Alice', 'timestamp': 1737583645.813175}
+2025-01-22 17:07:25.816 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:25.823 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    74
+2    Alice   107
+3  Charlie    65
+4      Bob    78
+2025-01-22 17:07:25.824 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:26.822 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Eve', 'timestamp': 1737583646.818408}
+2025-01-22 17:07:26.823 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:26.830 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    75
+2    Alice   107
+3  Charlie    65
+4      Bob    78
+2025-01-22 17:07:26.832 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:07:27.824 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583647.8203452}
+2025-01-22 17:07:27.824 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:27.830 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    75
+2    Alice   108
+3  Charlie    65
+4      Bob    78
+2025-01-22 17:07:27.831 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:28.825 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583648.822182}
+2025-01-22 17:07:28.825 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:28.831 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    75
+2    Alice   108
+3  Charlie    65
+4      Bob    79
+2025-01-22 17:07:28.832 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:29.832 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Charlie', 'timestamp': 1737583649.828981}
+2025-01-22 17:07:29.832 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:29.839 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   122
+1      Eve    75
+2    Alice   108
+3  Charlie    66
+4      Bob    79
+2025-01-22 17:07:29.839 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:30.837 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583650.834111}
+2025-01-22 17:07:30.838 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:30.844 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   123
+1      Eve    75
+2    Alice   108
+3  Charlie    66
+4      Bob    79
+2025-01-22 17:07:30.845 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:31.839 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Bob', 'timestamp': 1737583651.836158}
+2025-01-22 17:07:31.840 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:31.847 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   123
+1      Eve    75
+2    Alice   108
+3  Charlie    66
+4      Bob    80
+2025-01-22 17:07:31.847 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:32.841 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583652.839233}
+2025-01-22 17:07:32.842 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:32.849 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   123
+1      Eve    75
+2    Alice   109
+3  Charlie    66
+4      Bob    80
+2025-01-22 17:07:32.850 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:33.847 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583653.843821}
+2025-01-22 17:07:33.847 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:33.853 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   123
+1      Eve    75
+2    Alice   110
+3  Charlie    66
+4      Bob    80
+2025-01-22 17:07:33.854 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:34.850 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583654.847379}
+2025-01-22 17:07:34.850 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:34.856 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   124
+1      Eve    75
+2    Alice   110
+3  Charlie    66
+4      Bob    80
+2025-01-22 17:07:34.857 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:35.855 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583655.852132}
+2025-01-22 17:07:35.856 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:35.863 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   124
+1      Eve    75
+2    Alice   111
+3  Charlie    66
+4      Bob    80
+2025-01-22 17:07:35.864 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:36.861 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Diana', 'timestamp': 1737583656.858329}
+2025-01-22 17:07:36.862 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:36.871 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   125
+1      Eve    75
+2    Alice   111
+3  Charlie    66
+4      Bob    80
+2025-01-22 17:07:36.872 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:37.865 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Bob', 'timestamp': 1737583657.861546}
+2025-01-22 17:07:37.865 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:37.873 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   125
+1      Eve    75
+2    Alice   111
+3  Charlie    66
+4      Bob    81
+2025-01-22 17:07:37.875 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:38.869 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583658.865945}
+2025-01-22 17:07:38.870 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:38.883 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   126
+1      Eve    75
+2    Alice   111
+3  Charlie    66
+4      Bob    81
+2025-01-22 17:07:38.884 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:39.975 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583659.869961}
+2025-01-22 17:07:39.975 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:39.980 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   126
+1      Eve    75
+2    Alice   112
+3  Charlie    66
+4      Bob    81
+2025-01-22 17:07:39.982 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:40.877 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Eve', 'timestamp': 1737583660.874241}
+2025-01-22 17:07:40.877 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:40.886 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   126
+1      Eve    76
+2    Alice   112
+3  Charlie    66
+4      Bob    81
+2025-01-22 17:07:40.887 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:07:41.880 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583661.877003}
+2025-01-22 17:07:41.880 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:41.886 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   127
+1      Eve    76
+2    Alice   112
+3  Charlie    66
+4      Bob    81
+2025-01-22 17:07:41.887 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:42.993 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Charlie', 'timestamp': 1737583662.8838289}
+2025-01-22 17:07:42.994 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:42.998 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   127
+1      Eve    76
+2    Alice   112
+3  Charlie    67
+4      Bob    81
+2025-01-22 17:07:42.999 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:43.894 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Charlie', 'timestamp': 1737583663.88884}
+2025-01-22 17:07:43.895 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:43.902 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   127
+1      Eve    76
+2    Alice   112
+3  Charlie    68
+4      Bob    81
+2025-01-22 17:07:43.902 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:44.898 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583664.895437}
+2025-01-22 17:07:44.899 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:44.905 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   127
+1      Eve    76
+2    Alice   113
+3  Charlie    68
+4      Bob    81
+2025-01-22 17:07:44.906 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:45.906 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Diana', 'timestamp': 1737583665.902381}
+2025-01-22 17:07:45.906 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:45.913 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   128
+1      Eve    76
+2    Alice   113
+3  Charlie    68
+4      Bob    81
+2025-01-22 17:07:45.914 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:46.911 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Bob', 'timestamp': 1737583666.907419}
+2025-01-22 17:07:46.911 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:46.919 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   128
+1      Eve    76
+2    Alice   113
+3  Charlie    68
+4      Bob    82
+2025-01-22 17:07:46.920 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:48.020 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Eve', 'timestamp': 1737583667.913145}
+2025-01-22 17:07:48.020 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:48.043 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   128
+1      Eve    77
+2    Alice   113
+3  Charlie    68
+4      Bob    82
+2025-01-22 17:07:48.044 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:07:48.923 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Charlie', 'timestamp': 1737583668.92068}
+2025-01-22 17:07:48.924 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:48.930 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   128
+1      Eve    77
+2    Alice   113
+3  Charlie    69
+4      Bob    82
+2025-01-22 17:07:48.931 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:49.929 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Charlie', 'timestamp': 1737583669.925903}
+2025-01-22 17:07:49.930 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:49.935 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   128
+1      Eve    77
+2    Alice   113
+3  Charlie    70
+4      Bob    82
+2025-01-22 17:07:49.937 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:50.935 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Charlie', 'timestamp': 1737583670.931885}
+2025-01-22 17:07:50.936 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:07:50.942 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   128
+1      Eve    77
+2    Alice   113
+3  Charlie    71
+4      Bob    82
+2025-01-22 17:07:50.943 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:07:51.942 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Diana', 'timestamp': 1737583671.937432}
+2025-01-22 17:07:51.942 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:51.955 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   129
+1      Eve    77
+2    Alice   113
+3  Charlie    71
+4      Bob    82
+2025-01-22 17:07:51.956 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:52.946 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583672.942892}
+2025-01-22 17:07:52.946 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:07:52.952 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    77
+2    Alice   113
+3  Charlie    71
+4      Bob    82
+2025-01-22 17:07:52.953 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:07:53.952 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Eve', 'timestamp': 1737583673.949028}
+2025-01-22 17:07:53.952 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:53.958 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    78
+2    Alice   113
+3  Charlie    71
+4      Bob    82
+2025-01-22 17:07:53.959 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:07:54.957 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Eve', 'timestamp': 1737583674.9541981}
+2025-01-22 17:07:54.958 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:54.964 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    79
+2    Alice   113
+3  Charlie    71
+4      Bob    82
+2025-01-22 17:07:54.965 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:07:55.964 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Eve', 'timestamp': 1737583675.961229}
+2025-01-22 17:07:55.965 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:55.971 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    80
+2    Alice   113
+3  Charlie    71
+4      Bob    82
+2025-01-22 17:07:55.972 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:07:56.969 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Alice', 'timestamp': 1737583676.9659698}
+2025-01-22 17:07:56.969 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:07:56.977 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    80
+2    Alice   114
+3  Charlie    71
+4      Bob    82
+2025-01-22 17:07:56.978 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:07:57.975 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583677.972695}
+2025-01-22 17:07:57.976 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:57.980 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    80
+2    Alice   114
+3  Charlie    71
+4      Bob    83
+2025-01-22 17:07:57.981 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:58.978 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583678.974176}
+2025-01-22 17:07:58.978 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:07:59.140 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    80
+2    Alice   114
+3  Charlie    71
+4      Bob    84
+2025-01-22 17:07:59.141 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:07:59.985 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583679.981695}
+2025-01-22 17:07:59.985 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:07:59.992 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    81
+2    Alice   114
+3  Charlie    71
+4      Bob    84
+2025-01-22 17:07:59.992 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:00.991 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Alice', 'timestamp': 1737583680.9878259}
+2025-01-22 17:08:00.992 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:01.001 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   130
+1      Eve    81
+2    Alice   115
+3  Charlie    71
+4      Bob    84
+2025-01-22 17:08:01.002 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:01.996 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Diana', 'timestamp': 1737583681.991893}
+2025-01-22 17:08:01.996 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:02.003 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   131
+1      Eve    81
+2    Alice   115
+3  Charlie    71
+4      Bob    84
+2025-01-22 17:08:02.005 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:02.999 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Eve', 'timestamp': 1737583682.995518}
+2025-01-22 17:08:03.000 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:03.008 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   131
+1      Eve    82
+2    Alice   115
+3  Charlie    71
+4      Bob    84
+2025-01-22 17:08:03.009 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:04.014 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Charlie', 'timestamp': 1737583684.003208}
+2025-01-22 17:08:04.014 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:04.019 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   131
+1      Eve    82
+2    Alice   115
+3  Charlie    72
+4      Bob    84
+2025-01-22 17:08:04.022 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:05.018 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Eve', 'timestamp': 1737583685.016186}
+2025-01-22 17:08:05.018 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:05.030 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   131
+1      Eve    83
+2    Alice   115
+3  Charlie    72
+4      Bob    84
+2025-01-22 17:08:05.031 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:06.026 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Diana', 'timestamp': 1737583686.02126}
+2025-01-22 17:08:06.027 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:06.032 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   132
+1      Eve    83
+2    Alice   115
+3  Charlie    72
+4      Bob    84
+2025-01-22 17:08:06.034 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:07.029 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Charlie', 'timestamp': 1737583687.026304}
+2025-01-22 17:08:07.029 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:07.035 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   132
+1      Eve    83
+2    Alice   115
+3  Charlie    73
+4      Bob    84
+2025-01-22 17:08:07.036 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:08.033 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Charlie', 'timestamp': 1737583688.0291069}
+2025-01-22 17:08:08.033 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:08.042 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   132
+1      Eve    83
+2    Alice   115
+3  Charlie    74
+4      Bob    84
+2025-01-22 17:08:08.042 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:09.037 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Bob', 'timestamp': 1737583689.033399}
+2025-01-22 17:08:09.047 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:08:09.052 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   132
+1      Eve    83
+2    Alice   115
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:09.056 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:08:10.042 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583690.037979}
+2025-01-22 17:08:10.042 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:10.048 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   132
+1      Eve    84
+2    Alice   115
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:10.049 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:11.043 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Diana', 'timestamp': 1737583691.040264}
+2025-01-22 17:08:11.044 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:11.049 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   133
+1      Eve    84
+2    Alice   115
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:11.050 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:12.049 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Alice', 'timestamp': 1737583692.046334}
+2025-01-22 17:08:12.050 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:12.055 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   133
+1      Eve    84
+2    Alice   116
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:12.056 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:13.053 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Diana', 'timestamp': 1737583693.050006}
+2025-01-22 17:08:13.054 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:13.060 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   134
+1      Eve    84
+2    Alice   116
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:13.061 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:14.058 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Alice', 'timestamp': 1737583694.054826}
+2025-01-22 17:08:14.058 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:14.063 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   134
+1      Eve    84
+2    Alice   117
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:14.066 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:15.065 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Eve', 'timestamp': 1737583695.062351}
+2025-01-22 17:08:15.065 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:15.071 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   134
+1      Eve    85
+2    Alice   117
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:15.072 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:16.071 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Alice', 'timestamp': 1737583696.068192}
+2025-01-22 17:08:16.072 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:16.078 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   134
+1      Eve    85
+2    Alice   118
+3  Charlie    74
+4      Bob    85
+2025-01-22 17:08:16.078 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:17.073 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Charlie', 'timestamp': 1737583697.0706098}
+2025-01-22 17:08:17.073 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:17.080 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   134
+1      Eve    85
+2    Alice   118
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:17.081 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:18.084 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Alice', 'timestamp': 1737583698.076734}
+2025-01-22 17:08:18.084 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:18.091 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   134
+1      Eve    85
+2    Alice   119
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:18.091 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:19.087 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Diana', 'timestamp': 1737583699.0841322}
+2025-01-22 17:08:19.088 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:19.094 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   135
+1      Eve    85
+2    Alice   119
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:19.094 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:20.092 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Alice', 'timestamp': 1737583700.089858}
+2025-01-22 17:08:20.092 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:20.098 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   135
+1      Eve    85
+2    Alice   120
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:20.099 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:21.094 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Diana', 'timestamp': 1737583701.091618}
+2025-01-22 17:08:21.094 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:21.103 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   136
+1      Eve    85
+2    Alice   120
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:21.104 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:22.100 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583702.0972202}
+2025-01-22 17:08:22.100 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:22.106 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   136
+1      Eve    86
+2    Alice   120
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:22.107 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:23.107 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Eve', 'timestamp': 1737583703.103622}
+2025-01-22 17:08:23.108 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:23.116 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   136
+1      Eve    87
+2    Alice   120
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:23.116 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:24.113 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Alice', 'timestamp': 1737583704.109696}
+2025-01-22 17:08:24.113 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:24.119 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   136
+1      Eve    87
+2    Alice   121
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:24.120 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:25.134 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Diana', 'timestamp': 1737583705.113348}
+2025-01-22 17:08:25.134 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:25.166 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   137
+1      Eve    87
+2    Alice   121
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:25.168 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:26.121 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Diana', 'timestamp': 1737583706.117995}
+2025-01-22 17:08:26.122 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:26.129 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    87
+2    Alice   121
+3  Charlie    75
+4      Bob    85
+2025-01-22 17:08:26.130 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:27.147 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Charlie', 'timestamp': 1737583707.12721}
+2025-01-22 17:08:27.149 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:27.168 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    87
+2    Alice   121
+3  Charlie    76
+4      Bob    85
+2025-01-22 17:08:27.171 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:28.136 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583708.132533}
+2025-01-22 17:08:28.136 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:08:28.147 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    87
+2    Alice   121
+3  Charlie    76
+4      Bob    86
+2025-01-22 17:08:28.148 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:08:29.141 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583709.1371012}
+2025-01-22 17:08:29.141 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:08:29.148 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    87
+2    Alice   121
+3  Charlie    76
+4      Bob    87
+2025-01-22 17:08:29.149 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:08:30.143 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583710.139593}
+2025-01-22 17:08:30.143 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:30.148 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    88
+2    Alice   121
+3  Charlie    76
+4      Bob    87
+2025-01-22 17:08:30.150 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:31.148 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Eve', 'timestamp': 1737583711.1445508}
+2025-01-22 17:08:31.149 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:31.183 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    89
+2    Alice   121
+3  Charlie    76
+4      Bob    87
+2025-01-22 17:08:31.200 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:32.155 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Alice', 'timestamp': 1737583712.151401}
+2025-01-22 17:08:32.155 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:32.162 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    89
+2    Alice   122
+3  Charlie    76
+4      Bob    87
+2025-01-22 17:08:32.163 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:33.261 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Alice', 'timestamp': 1737583713.157006}
+2025-01-22 17:08:33.262 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:33.267 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   138
+1      Eve    89
+2    Alice   123
+3  Charlie    76
+4      Bob    87
+2025-01-22 17:08:33.268 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:34.161 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Diana', 'timestamp': 1737583714.1594188}
+2025-01-22 17:08:34.161 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:34.168 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   139
+1      Eve    89
+2    Alice   123
+3  Charlie    76
+4      Bob    87
+2025-01-22 17:08:34.169 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:35.166 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Eve', 'timestamp': 1737583715.162397}
+2025-01-22 17:08:35.167 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:08:35.173 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   139
+1      Eve    90
+2    Alice   123
+3  Charlie    76
+4      Bob    87
+2025-01-22 17:08:35.174 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:08:36.172 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Charlie', 'timestamp': 1737583716.168538}
+2025-01-22 17:08:36.172 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:36.186 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   139
+1      Eve    90
+2    Alice   123
+3  Charlie    77
+4      Bob    87
+2025-01-22 17:08:36.188 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:37.176 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Bob', 'timestamp': 1737583717.1737568}
+2025-01-22 17:08:37.177 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:08:37.184 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   139
+1      Eve    90
+2    Alice   123
+3  Charlie    77
+4      Bob    88
+2025-01-22 17:08:37.184 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:08:38.182 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Alice', 'timestamp': 1737583718.175972}
+2025-01-22 17:08:38.182 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:38.191 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   139
+1      Eve    90
+2    Alice   124
+3  Charlie    77
+4      Bob    88
+2025-01-22 17:08:38.194 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:39.182 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583719.178439}
+2025-01-22 17:08:39.182 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:39.189 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   140
+1      Eve    90
+2    Alice   124
+3  Charlie    77
+4      Bob    88
+2025-01-22 17:08:39.190 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:40.185 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583720.182275}
+2025-01-22 17:08:40.186 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:40.196 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   141
+1      Eve    90
+2    Alice   124
+3  Charlie    77
+4      Bob    88
+2025-01-22 17:08:40.197 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:41.192 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Bob', 'timestamp': 1737583721.1882691}
+2025-01-22 17:08:41.193 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:08:41.205 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   141
+1      Eve    90
+2    Alice   124
+3  Charlie    77
+4      Bob    89
+2025-01-22 17:08:41.208 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:08:42.215 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Diana', 'timestamp': 1737583722.199198}
+2025-01-22 17:08:42.281 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:42.343 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   142
+1      Eve    90
+2    Alice   124
+3  Charlie    77
+4      Bob    89
+2025-01-22 17:08:42.346 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:43.207 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Diana', 'timestamp': 1737583723.20414}
+2025-01-22 17:08:43.208 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:43.214 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   143
+1      Eve    90
+2    Alice   124
+3  Charlie    77
+4      Bob    89
+2025-01-22 17:08:43.215 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:44.213 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Alice', 'timestamp': 1737583724.210332}
+2025-01-22 17:08:44.214 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:44.220 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   143
+1      Eve    90
+2    Alice   125
+3  Charlie    77
+4      Bob    89
+2025-01-22 17:08:44.221 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:45.227 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Charlie', 'timestamp': 1737583725.211722}
+2025-01-22 17:08:45.228 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:45.244 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   143
+1      Eve    90
+2    Alice   125
+3  Charlie    78
+4      Bob    89
+2025-01-22 17:08:45.246 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:46.224 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Diana', 'timestamp': 1737583726.220335}
+2025-01-22 17:08:46.224 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:46.233 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   144
+1      Eve    90
+2    Alice   125
+3  Charlie    78
+4      Bob    89
+2025-01-22 17:08:46.234 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:47.228 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Bob', 'timestamp': 1737583727.224134}
+2025-01-22 17:08:47.229 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:08:47.237 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   144
+1      Eve    90
+2    Alice   125
+3  Charlie    78
+4      Bob    90
+2025-01-22 17:08:47.238 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:08:48.232 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583728.229012}
+2025-01-22 17:08:48.232 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:48.238 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   145
+1      Eve    90
+2    Alice   125
+3  Charlie    78
+4      Bob    90
+2025-01-22 17:08:48.239 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:49.460 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Alice', 'timestamp': 1737583729.2872949}
+2025-01-22 17:08:49.460 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:49.464 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   145
+1      Eve    90
+2    Alice   126
+3  Charlie    78
+4      Bob    90
+2025-01-22 17:08:49.465 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:50.309 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Alice', 'timestamp': 1737583730.304363}
+2025-01-22 17:08:50.309 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:50.317 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   145
+1      Eve    90
+2    Alice   127
+3  Charlie    78
+4      Bob    90
+2025-01-22 17:08:50.318 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:51.309 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Charlie', 'timestamp': 1737583731.305938}
+2025-01-22 17:08:51.309 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:51.315 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   145
+1      Eve    90
+2    Alice   127
+3  Charlie    79
+4      Bob    90
+2025-01-22 17:08:51.316 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:52.311 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Buzz messages for everyone.', 'author': 'Bob', 'timestamp': 1737583732.308678}
+2025-01-22 17:08:52.312 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:08:52.319 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   145
+1      Eve    90
+2    Alice   127
+3  Charlie    79
+4      Bob    91
+2025-01-22 17:08:52.321 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:08:53.375 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583733.357125}
+2025-01-22 17:08:53.375 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:53.379 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   146
+1      Eve    90
+2    Alice   127
+3  Charlie    79
+4      Bob    91
+2025-01-22 17:08:53.380 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:54.370 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583734.364587}
+2025-01-22 17:08:54.371 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:54.376 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   147
+1      Eve    90
+2    Alice   127
+3  Charlie    79
+4      Bob    91
+2025-01-22 17:08:54.377 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:55.375 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: I love Python!', 'author': 'Alice', 'timestamp': 1737583735.371903}
+2025-01-22 17:08:55.375 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:55.383 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   147
+1      Eve    90
+2    Alice   128
+3  Charlie    79
+4      Bob    91
+2025-01-22 17:08:55.384 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:56.382 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Charlie', 'timestamp': 1737583736.3792598}
+2025-01-22 17:08:56.382 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:08:56.389 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   147
+1      Eve    90
+2    Alice   128
+3  Charlie    80
+4      Bob    91
+2025-01-22 17:08:56.389 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:08:57.389 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583737.3860521}
+2025-01-22 17:08:57.389 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:57.395 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   147
+1      Eve    90
+2    Alice   129
+3  Charlie    80
+4      Bob    91
+2025-01-22 17:08:57.396 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:08:58.392 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Diana', 'timestamp': 1737583738.3894799}
+2025-01-22 17:08:58.393 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:08:58.398 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   148
+1      Eve    90
+2    Alice   129
+3  Charlie    80
+4      Bob    91
+2025-01-22 17:08:58.400 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:08:59.393 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583739.3906891}
+2025-01-22 17:08:59.394 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:08:59.399 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   148
+1      Eve    90
+2    Alice   130
+3  Charlie    80
+4      Bob    91
+2025-01-22 17:08:59.400 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:09:00.396 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583740.3922849}
+2025-01-22 17:09:00.397 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:09:00.422 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   148
+1      Eve    90
+2    Alice   130
+3  Charlie    80
+4      Bob    92
+2025-01-22 17:09:00.426 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:09:01.401 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Bob', 'timestamp': 1737583741.3979928}
+2025-01-22 17:09:01.402 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:09:01.408 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   148
+1      Eve    90
+2    Alice   130
+3  Charlie    80
+4      Bob    93
+2025-01-22 17:09:01.408 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:09:02.406 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Diana', 'timestamp': 1737583742.402605}
+2025-01-22 17:09:02.406 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:09:02.412 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    90
+2    Alice   130
+3  Charlie    80
+4      Bob    93
+2025-01-22 17:09:02.413 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:09:03.408 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Bob', 'timestamp': 1737583743.406163}
+2025-01-22 17:09:03.408 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:09:03.415 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    90
+2    Alice   130
+3  Charlie    80
+4      Bob    94
+2025-01-22 17:09:03.416 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:09:04.412 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Eve', 'timestamp': 1737583744.4109151}
+2025-01-22 17:09:04.413 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:09:04.417 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    91
+2    Alice   130
+3  Charlie    80
+4      Bob    94
+2025-01-22 17:09:04.419 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:09:05.422 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Hello, Kafka world!', 'author': 'Bob', 'timestamp': 1737583745.4159691}
+2025-01-22 17:09:05.422 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:09:05.445 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    91
+2    Alice   130
+3  Charlie    80
+4      Bob    95
+2025-01-22 17:09:05.446 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:09:06.424 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Alice', 'timestamp': 1737583746.422258}
+2025-01-22 17:09:06.424 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:09:06.430 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    91
+2    Alice   131
+3  Charlie    80
+4      Bob    95
+2025-01-22 17:09:06.430 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:09:07.431 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Eve', 'timestamp': 1737583747.428307}
+2025-01-22 17:09:07.431 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:09:07.440 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    92
+2    Alice   131
+3  Charlie    80
+4      Bob    95
+2025-01-22 17:09:07.441 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:09:08.435 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583748.432262}
+2025-01-22 17:09:08.436 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:09:08.442 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    92
+2    Alice   132
+3  Charlie    80
+4      Bob    95
+2025-01-22 17:09:08.443 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:09:09.441 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: JSON makes life easier.', 'author': 'Bob', 'timestamp': 1737583749.4381702}
+2025-01-22 17:09:09.441 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:09:09.448 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    92
+2    Alice   132
+3  Charlie    80
+4      Bob    96
+2025-01-22 17:09:09.449 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:09:10.443 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Charlie', 'timestamp': 1737583750.440424}
+2025-01-22 17:09:10.443 | INFO     | __main__:process_message:92 - Message received from author: Charlie
+2025-01-22 17:09:10.450 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   149
+1      Eve    92
+2    Alice   132
+3  Charlie    81
+4      Bob    96
+2025-01-22 17:09:10.451 | WARNING  | __main__:process_message:107 - ALERT: Author 'Charlie' has sent more than 5 messages!
+2025-01-22 17:09:11.447 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583751.444206}
+2025-01-22 17:09:11.448 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:09:11.454 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   150
+1      Eve    92
+2    Alice   132
+3  Charlie    81
+4      Bob    96
+2025-01-22 17:09:11.454 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:09:12.452 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Distributed systems are fascinating.', 'author': 'Bob', 'timestamp': 1737583752.4484181}
+2025-01-22 17:09:12.453 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:09:12.461 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   150
+1      Eve    92
+2    Alice   132
+3  Charlie    81
+4      Bob    97
+2025-01-22 17:09:12.461 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:09:13.458 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583753.4550982}
+2025-01-22 17:09:13.458 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:09:13.464 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   150
+1      Eve    92
+2    Alice   133
+3  Charlie    81
+4      Bob    97
+2025-01-22 17:09:13.465 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:09:14.460 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583754.4563022}
+2025-01-22 17:09:14.460 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:09:14.467 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   150
+1      Eve    92
+2    Alice   134
+3  Charlie    81
+4      Bob    97
+2025-01-22 17:09:14.468 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:09:15.466 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583755.4625611}
+2025-01-22 17:09:15.466 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:09:15.477 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   151
+1      Eve    92
+2    Alice   134
+3  Charlie    81
+4      Bob    97
+2025-01-22 17:09:15.477 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:09:16.473 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Streaming data is fun.', 'author': 'Alice', 'timestamp': 1737583756.468297}
+2025-01-22 17:09:16.474 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:09:16.480 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   151
+1      Eve    92
+2    Alice   135
+3  Charlie    81
+4      Bob    97
+2025-01-22 17:09:16.481 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:09:17.478 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: This is a buzz message.', 'author': 'Diana', 'timestamp': 1737583757.4739351}
+2025-01-22 17:09:17.478 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:09:17.485 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   152
+1      Eve    92
+2    Alice   135
+3  Charlie    81
+4      Bob    97
+2025-01-22 17:09:17.488 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:09:18.480 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Data engineering is my passion.', 'author': 'Bob', 'timestamp': 1737583758.476779}
+2025-01-22 17:09:18.480 | INFO     | __main__:process_message:92 - Message received from author: Bob
+2025-01-22 17:09:18.486 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   152
+1      Eve    92
+2    Alice   135
+3  Charlie    81
+4      Bob    98
+2025-01-22 17:09:18.488 | WARNING  | __main__:process_message:107 - ALERT: Author 'Bob' has sent more than 5 messages!
+2025-01-22 17:09:19.485 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583759.4802501}
+2025-01-22 17:09:19.488 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:09:19.497 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   153
+1      Eve    92
+2    Alice   135
+3  Charlie    81
+4      Bob    98
+2025-01-22 17:09:19.498 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
+2025-01-22 17:09:20.489 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Alice', 'timestamp': 1737583760.485513}
+2025-01-22 17:09:20.489 | INFO     | __main__:process_message:92 - Message received from author: Alice
+2025-01-22 17:09:20.496 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   153
+1      Eve    92
+2    Alice   136
+3  Charlie    81
+4      Bob    98
+2025-01-22 17:09:20.496 | WARNING  | __main__:process_message:107 - ALERT: Author 'Alice' has sent more than 5 messages!
+2025-01-22 17:09:21.496 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Kafka is awesome.', 'author': 'Eve', 'timestamp': 1737583761.490956}
+2025-01-22 17:09:21.497 | INFO     | __main__:process_message:92 - Message received from author: Eve
+2025-01-22 17:09:21.500 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   153
+1      Eve    93
+2    Alice   136
+3  Charlie    81
+4      Bob    98
+2025-01-22 17:09:21.502 | WARNING  | __main__:process_message:107 - ALERT: Author 'Eve' has sent more than 5 messages!
+2025-01-22 17:09:22.499 | INFO     | __main__:process_message:86 - Processed JSON message: {'message': 'Custom Message: Have a great day!', 'author': 'Diana', 'timestamp': 1737583762.496563}
+2025-01-22 17:09:22.500 | INFO     | __main__:process_message:92 - Message received from author: Diana
+2025-01-22 17:09:22.506 | INFO     | __main__:process_message:103 - Updated author counts:     author count
+0    Diana   154
+1      Eve    93
+2    Alice   136
+3  Charlie    81
+4      Bob    98
+2025-01-22 17:09:22.507 | WARNING  | __main__:process_message:107 - ALERT: Author 'Diana' has sent more than 5 messages!
