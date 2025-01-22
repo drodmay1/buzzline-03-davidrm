@@ -42,14 +42,14 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("BUZZ_TOPIC", "unknown_topic")
+    topic = os.getenv("BUZZ_TOPIC", "buzzline_json")  # Default to 'buzzline_json'
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 
-def get_kafka_consumer_group_id() -> int:
+def get_kafka_consumer_group_id() -> str:
     """Fetch Kafka consumer group id from environment or use default."""
-    group_id: str = os.getenv("BUZZ_CONSUMER_GROUP_ID", "default_group")
+    group_id: str = os.getenv("BUZZ_CONSUMER_GROUP_ID", "buzz_group")  # Default to 'buzz_group'
     logger.info(f"Kafka consumer group id: {group_id}")
     return group_id
 
@@ -59,17 +59,12 @@ def get_kafka_consumer_group_id() -> int:
 #####################################
 
 # Initialize a dictionary to store author counts
-# The defaultdict type initializes counts to 0
-# pass in the int function as the default_factory
-# to ensure counts are integers
-# {author: count} author is the key and count is the value
 author_counts = defaultdict(int)
 
 
 #####################################
 # Function to process a single message
-# #####################################
-
+#####################################
 
 def process_message(message: str) -> None:
     """
@@ -80,10 +75,10 @@ def process_message(message: str) -> None:
     """
     try:
         # Log the raw message for debugging
-        logger.debug(f"Raw message: {message}")
+        logger.debug(f"Raw message received: {message}")
 
         # Parse the JSON string into a Python dictionary
-        message_dict: dict = json.loads(message)
+        message_dict = json.loads(message)  # Assuming message is already a string
 
         # Ensure the processed JSON is logged for debugging
         logger.info(f"Processed JSON message: {message_dict}")
@@ -112,7 +107,6 @@ def process_message(message: str) -> None:
 # Define main function for this module
 #####################################
 
-
 def main() -> None:
     """
     Main entry point for the consumer.
@@ -123,7 +117,7 @@ def main() -> None:
     """
     logger.info("START consumer.")
 
-    # fetch .env content
+    # Fetch .env content
     topic = get_kafka_topic()
     group_id = get_kafka_consumer_group_id()
     logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
