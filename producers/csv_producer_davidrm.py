@@ -1,14 +1,10 @@
 """
-json_producer_case.py
+csv_producer_case.py
 
-Stream JSON data to a Kafka topic.
+Stream numeric data to a Kafka topic.
 
-Example JSON message
-{"message": "I love Python!", "author": "Eve"}
-
-Example serialized to Kafka message
-"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
-
+It is common to transfer csv data as JSON so 
+each field is clearly labeled. 
 """
 
 #####################################
@@ -18,9 +14,11 @@ Example serialized to Kafka message
 # Import packages from Python Standard Library
 import os
 import sys
-import time
+import time  # control message intervals
 import pathlib  # work with file paths
+import csv  # handle CSV data
 import json  # work with JSON data
+from datetime import datetime  # work with timestamps
 
 # Import external packages
 from dotenv import load_dotenv
@@ -46,14 +44,14 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("BUZZ_TOPIC", "unknown_topic")
+    topic = os.getenv("SMOKER_TOPIC", "unknown_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 
 def get_message_interval() -> int:
     """Fetch message interval from environment or use default."""
-    interval = int(os.getenv("BUZZ_INTERVAL_SECONDS", 1))
+    interval = int(os.getenv("SMOKER_INTERVAL_SECONDS", 1))
     logger.info(f"Message interval: {interval} seconds")
     return interval
 
@@ -68,11 +66,11 @@ PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 logger.info(f"Project root: {PROJECT_ROOT}")
 
 # Set directory where data is stored
-DATA_FOLDER: pathlib.Path = PROJECT_ROOT.joinpath("data")
+DATA_FOLDER = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
 
 # Set the name of the data file
-DATA_FILE: pathlib.Path = DATA_FOLDER.joinpath("buzz.json")
+DATA_FILE = DATA_FOLDER.joinpath("smoker_temps.csv")
 logger.info(f"Data file: {DATA_FILE}")
 
 #####################################
@@ -82,55 +80,55 @@ logger.info(f"Data file: {DATA_FILE}")
 
 def generate_messages(file_path: pathlib.Path):
     """
-    Read from a JSON file and yield them one by one, continuously.
+    Read from a csv file and yield records one by one, continuously.
 
     Args:
-        file_path (pathlib.Path): Path to the JSON file.
+        file_path (pathlib.Path): Path to the CSV file.
 
     Yields:
-        dict: A dictionary containing the JSON data.
+        str: CSV row formatted as a string.
     """
     while True:
         try:
             logger.info(f"Opening data file in read mode: {DATA_FILE}")
-            with open(DATA_FILE, "r") as json_file:
+            with open(DATA_FILE, "r") as csv_file:
                 logger.info(f"Reading data from file: {DATA_FILE}")
 
-                # Load the JSON file as a list of dictionaries
-                json_data: list = json.load(json_file)
+                csv_reader = csv.DictReader(csv_file)
+                for row in csv_reader:
+                    # Ensure required fields are present
+                    if "temperature" not in row:
+                        logger.error(f"Missing 'temperature' column in row: {row}")
+                        continue
 
-                if not isinstance(json_data, list):
-                    raise ValueError(
-                        f"Expected a list of JSON objects, got {type(json_data)}."
-                    )
-
-                # Iterate over the entries in the JSON file
-                for buzz_entry in json_data:
-                    logger.debug(f"Generated JSON: {buzz_entry}")
-                    yield buzz_entry
+                    # Generate a timestamp and prepare the message
+                    current_timestamp = datetime.utcnow().isoformat()
+                    message = {
+                        "timestamp": current_timestamp,
+                        "temperature": float(row["temperature"]),
+                    }
+                    logger.debug(f"Generated message: {message}")
+                    yield message
         except FileNotFoundError:
             logger.error(f"File not found: {file_path}. Exiting.")
             sys.exit(1)
-        except json.JSONDecodeError as e:
-            logger.error(f"Invalid JSON format in file: {file_path}. Error: {e}")
-            sys.exit(2)
         except Exception as e:
             logger.error(f"Unexpected error in message generation: {e}")
             sys.exit(3)
 
 
 #####################################
-# Main Function
+# Define main function for this module.
 #####################################
 
 
 def main():
     """
-    Main entry point for this producer.
+    Main entry point for the producer.
 
-    - Ensures the Kafka topic exists.
+    - Reads the Kafka topic name from an environment variable.
     - Creates a Kafka producer using the `create_kafka_producer` utility.
-    - Streams generated JSON messages to the Kafka topic.
+    - Streams messages to the Kafka topic.
     """
 
     logger.info("START producer.")
@@ -164,10 +162,9 @@ def main():
     # Generate and send messages
     logger.info(f"Starting message production to topic '{topic}'...")
     try:
-        for message_dict in generate_messages(DATA_FILE):
-            # Send message directly as a dictionary (producer handles serialization)
-            producer.send(topic, value=message_dict)
-            logger.info(f"Sent message to topic '{topic}': {message_dict}")
+        for csv_message in generate_messages(DATA_FILE):
+            producer.send(topic, value=csv_message)
+            logger.info(f"Sent message to topic '{topic}': {csv_message}")
             time.sleep(interval_secs)
     except KeyboardInterrupt:
         logger.warning("Producer interrupted by user.")
