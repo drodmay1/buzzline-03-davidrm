@@ -1,5 +1,5 @@
 """
-csv_producer_case.py
+csv_producer_david.py
 
 Stream numeric data to a Kafka topic.
 
@@ -16,14 +16,10 @@ import os
 import sys
 import time  # control message intervals
 import pathlib  # work with file paths
-import csv  # handle CSV data
-import json  # work with JSON data
-from datetime import datetime  # work with timestamps
-
-# Import external packages
+import pandas as pd
+from datetime import datetime # work with time stamps
+import json
 from dotenv import load_dotenv
-
-# Import functions from local modules
 from utils.utils_producer import (
     verify_services,
     create_kafka_producer,
@@ -40,7 +36,6 @@ load_dotenv()
 #####################################
 # Getter Functions for .env Variables
 #####################################
-
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
@@ -60,8 +55,6 @@ def get_message_interval() -> int:
 # Set up Paths
 #####################################
 
-# The parent directory of this file is its folder.
-# Go up one more parent level to get the project root.
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
 logger.info(f"Project root: {PROJECT_ROOT}")
 
@@ -77,38 +70,40 @@ logger.info(f"Data file: {DATA_FILE}")
 # Message Generator
 #####################################
 
-
 def generate_messages(file_path: pathlib.Path):
     """
-    Read from a csv file and yield records one by one, continuously.
+    Read from a CSV file and yield records one by one, continuously.
 
     Args:
         file_path (pathlib.Path): Path to the CSV file.
 
     Yields:
-        str: CSV row formatted as a string.
+        dict: Custom message with fields such as temperature, timestamp, and custom fields.
     """
     while True:
         try:
             logger.info(f"Opening data file in read mode: {DATA_FILE}")
-            with open(DATA_FILE, "r") as csv_file:
-                logger.info(f"Reading data from file: {DATA_FILE}")
+            
+            # Use pandas to read the CSV file
+            df = pd.read_csv(DATA_FILE)
+            logger.info(f"Loaded CSV data into DataFrame.")
 
-                csv_reader = csv.DictReader(csv_file)
-                for row in csv_reader:
-                    # Ensure required fields are present
-                    if "temperature" not in row:
-                        logger.error(f"Missing 'temperature' column in row: {row}")
-                        continue
+            for index, row in df.iterrows():
+                # Ensure required fields are present
+                if "temperature" not in row:
+                    logger.error(f"Missing 'temperature' column in row: {row}")
+                    continue
 
-                    # Generate a timestamp and prepare the message
-                    current_timestamp = datetime.utcnow().isoformat()
-                    message = {
-                        "timestamp": current_timestamp,
-                        "temperature": float(row["temperature"]),
-                    }
-                    logger.debug(f"Generated message: {message}")
-                    yield message
+                # Custom message format (simple change)
+                message = {
+                    "timestamp": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+                    "temperature": f"{row['temperature']} C",  # Added a unit of measurement (Celsius)
+                    "sensor_status": "active"  # A simple custom field added
+                }
+
+                logger.debug(f"Generated message: {message}")
+                yield message
+
         except FileNotFoundError:
             logger.error(f"File not found: {file_path}. Exiting.")
             sys.exit(1)
@@ -116,11 +111,9 @@ def generate_messages(file_path: pathlib.Path):
             logger.error(f"Unexpected error in message generation: {e}")
             sys.exit(3)
 
-
 #####################################
 # Define main function for this module.
 #####################################
-
 
 def main():
     """
@@ -130,7 +123,6 @@ def main():
     - Creates a Kafka producer using the `create_kafka_producer` utility.
     - Streams messages to the Kafka topic.
     """
-
     logger.info("START producer.")
     verify_services()
 
