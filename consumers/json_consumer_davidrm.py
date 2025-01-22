@@ -78,7 +78,7 @@ def process_message(message: str) -> None:
         logger.debug(f"Raw message received: {message}")
 
         # Parse the JSON string into a Python dictionary
-        message_dict = json.loads(message)  # Assuming message is already a string
+        message_dict = json.loads(message)  # Directly parse the string
 
         # Ensure the processed JSON is logged for debugging
         logger.info(f"Processed JSON message: {message_dict}")
@@ -129,7 +129,7 @@ def main() -> None:
     logger.info(f"Polling messages from topic '{topic}'...")
     try:
         for message in consumer:
-            message_str = message.value
+            message_str = message.value  # Kafka message value
             logger.debug(f"Received message at offset {message.offset}: {message_str}")
             process_message(message_str)
     except KeyboardInterrupt:
